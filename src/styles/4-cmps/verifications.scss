@@ -1,0 +1,43 @@
+.verifications {
+  color: $clr-white;
+  max-width: 880px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: rem(158px);
+  .veri-temp {
+    text-align: center;
+    @media only screen and (max-width: 375px) {
+      margin-top: rem(80px);
+    }
+    .veri-img {
+    }
+    .veri-title {
+      font-family: raleway-bold;
+      font-size: rem(20px);
+      margin-top: rem(19px);
+      margin-bottom: 0;
+    }
+    .veri-content {
+      font-family: opensans-regular;
+      font-size: rem(14px);
+      margin-top: rem(5px);
+      margin-bottom: 0;
+    }
+  }
+  .anywhere {
+    max-width: 349px;
+    @media only screen and (max-width: 375px) {
+      margin-top: 0;
+    }
+  }
+  .secure {
+    max-width: 384px;
+  }
+  .collab,
+  .anyfile {
+    max-width: 363px;
+    margin-top: rem(80px);
+  }
+}

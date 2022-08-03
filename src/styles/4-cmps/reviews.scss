@@ -1,0 +1,69 @@
+.reviews-container {
+  color: $clr-white;
+    position: relative;
+  margin:rem(134px) auto ;
+  margin-bottom: 0;
+  .quotes {
+    position: absolute;
+    top: 0px;
+    left: 50px;
+    z-index: -1;
+  }
+  @media only screen and (max-width: 375px) {
+    flex-direction: column;
+  }
+  .review {
+    background-color: $clr-testiBG;
+    border-radius: 4px;
+    // box-shadow: 5px 5px 8px #383838;
+    // box-shadow: inset 0 3px 6px #000000;
+    padding: 40px 30px 33px;
+    
+    
+
+    .r-body {
+      max-width: 300px;
+      font-family: opensans-regular;
+      font-size: rem(14px);
+      margin: 0;
+    }
+    .user-info {
+      margin-top: rem(26px);
+      display: flex;
+      img {
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        margin-inline-end: rem(8px);
+      }
+      .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .name {
+          font-family: opensans-bold;
+          font-size: rem(10px);
+          margin-bottom: rem(2px) 0 0;
+        }
+        .title {
+          font-family: opensans-regular;
+          font-size: rem(8px);
+        }
+      }
+    }
+  }
+  .user-1,
+  .user-2 {
+    margin-inline-end: rem(40px);
+    @media only screen and (max-width: 375px) {
+      margin: 0;
+      margin-top:rem(24px) ;
+    }
+  }
+  .user-3 {
+    margin: 0;
+    @media only screen and (max-width: 375px) {
+      margin-top: rem(24px);
+    }
+  }
+}

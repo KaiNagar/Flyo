@@ -1,0 +1,122 @@
+.app-footer {
+  margin-top: rem(332px);
+  background-color: $clr-FBG;
+  color: $clr-white;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  padding-top: 284px;
+  padding-bottom: 77px;
+  position: relative;
+
+  .logo {
+    position: absolute;
+    top: -92px;
+    left: 0px;
+  }
+  .footer-info {
+    max-width: 379px;
+    font-size: 1rem;
+    position: relative;
+    font-family: opensans-regular;
+
+    .info-body {
+      align-items: flex-start;
+      img {
+        margin-top: rem(6px);
+        margin-inline-end: rem(26px);
+      }
+      .footer-txt {
+        margin: 0;
+      }
+    }
+  }
+  .contact-info {
+    font-family: opensans-regular;
+    font-size: rem(14px);
+    margin-inline-start: rem(80px);
+    margin-inline-end: rem(149.5px);
+    .phone-number {
+      img {
+        width: 24px;
+        filter: brightness(0) invert(1);
+      }
+      .txt {
+        margin-inline-start: rem(23.5px);
+      }
+    }
+    .email {
+      margin-top: 1rem;
+      .img {
+        background-color: $clr-white;
+        display: flex;
+        width: 24px;
+        border-radius: 4px;
+        img {
+          width: 24px;
+        }
+      }
+      .txt {
+        margin-inline-start: rem(23.5px);
+      }
+    }
+  }
+  .nav-btns {
+    display: flex;
+    flex-direction: column;
+    font-family: opensans-regular;
+    font-size: 1rem;
+    margin-inline-end: rem(83px);
+    span {
+      margin-bottom: rem(17px);
+    }
+  }
+  .seconds {
+    margin-inline-end: rem(118px);
+  }
+  .social-btns {
+    img {
+      width: 32px;
+      margin-inline-start: rem(12.5px);
+      filter: brightness(0) invert(1);
+      border-radius: 50%;
+      border: 1px solid $clr-white;
+      padding: 7px;
+    }
+    &:last-child {
+      margin: 0;
+    }
+  }
+  .bg {
+    background-color: $clr-MBG;
+    width: 100%;
+    height: 320%;
+    position: absolute;
+    bottom: 517px;
+    z-index: -1;
+    left: 0;
+  }
+  @media only screen and (max-width: 375px) {
+    padding-bottom: rem(46px);
+    justify-content: flex-start;
+    .container {
+      width:100%;
+      flex-direction: column;
+      > * {
+        margin: 1rem;
+      }
+    }
+
+    .footer-txt {
+      max-width: 220px;
+    }
+    .social-btns {
+      padding-top: rem(81px);
+      text-align: center;
+      img {
+        filter: brightness(0) invert(1);
+      }
+      &:last-child {
+      }
+    }
+  }
+}

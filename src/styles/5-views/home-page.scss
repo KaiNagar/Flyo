@@ -1,0 +1,19 @@
+.home-page {
+  margin: auto;
+  .img {
+    margin: auto;
+    img {
+      @media only screen and (max-width: 375px) {
+        width: 304px;
+      }
+    }
+  }
+  .curvy{
+    width: 100%;
+    position: absolute;
+    bottom: -410px;
+    left: 0;
+    z-index: -1;
+  }
+  
+}

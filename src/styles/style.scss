@@ -1,0 +1,25 @@
+// setup
+@import './1-setup/functions';
+@import './1-setup/mixins';
+@import './1-setup/typography';
+@import './1-setup/variables';
+
+// base
+@import './2-base/base';
+@import './2-base/helpers';
+
+// layout
+@import './3-layout/main-layout';
+
+// cmps
+@import './4-cmps/app-header.scss';
+@import './4-cmps/getting-started.scss';
+@import './4-cmps/verifications.scss';
+@import './4-cmps/stay-productive.scss';
+@import './4-cmps/reviews.scss';
+@import './4-cmps/app-footer.scss';
+@import './4-cmps/subscribtion.scss';
+
+
+// views
+@import './5-views/home-page.scss';
